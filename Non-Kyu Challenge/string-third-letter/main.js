@@ -43,3 +43,17 @@ let thirdLettersOnly = str.split('').filter( (element, index) => ((index + 1) % 
 let findTheThirdLetter = (str) => {
  return str.split('').filter( (element, index) => ((index + 1) % 3 === 0)).join('');
 };
+
+fetch('https://lyft-interview-test.glitch.me/test', {
+    method: 'POST',
+    headers: {
+        'Content-Type' : 'application/json'
+    },
+    body: JSON.stringify({
+        string_to_cut: 'iamyourlyftdriver'
+    })
+}).then(res => {
+    return res.json()
+    })
+    .then(data => console.log(data.split('').filter( (element, index) => (index + 1) % 3 === 0).join('')))
+    .catch(error => console.log('ERROR'));
