@@ -12,3 +12,10 @@ class SmallestIntegerFinder {
       return Math.min(...args);
     }
   }
+
+  // answer I had before that literally made no sense lol^
+
+  //new answer: 
+
+  const sortArray = (arr) => arr.sort((a, b) => a - b)[0];
+
