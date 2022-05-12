@@ -55,5 +55,5 @@ fetch('https://lyft-interview-test.glitch.me/test', {
 }).then(res => {
     return res.json()
     })
-    .then(data => console.log(data.split('').filter( (element, index) => (index + 1) % 3 === 0).join('')))
+    .then(data => data.split('').filter( (element, index) => (index + 1) % 3 === 0).join(''))
     .catch(error => console.log('ERROR'));
