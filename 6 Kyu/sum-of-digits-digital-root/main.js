@@ -35,3 +35,9 @@ function digital_root(n){
       result += Number(num)});
       return result >= 10 ? digital_root(result) : result;
   }}
+
+//this is how I wanted to solve it but I couldn't figure it out. I got very close though.
+
+function digital_root(n) {
+  return n < 10 ? n : digital_root(String(n).split('').reduce((s,v)=>Number(s)+Number(v)));
+}
