@@ -8,4 +8,7 @@ const quadratic = (x1, x2) => {
     return [a, e, d];
 }
 
-//I genuinely can't believe I had gotten this first try smh I am actually so upset right now
+//I genuinely can't believe I had gotten this first try smh I am actually so upset right now.
+
+//there are simpler ways of doing this though, should be sopught after and tried
+
