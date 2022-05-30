@@ -39,6 +39,9 @@ const basicOp = (operation, value1, value2) => {
 //       likes: ["JavaScript", "Gaming", "Foxes"],
 //     },
 //   ];
+
+//slight objects review^^
+
   
 
 // const profileLookup = (name, prop) => {
