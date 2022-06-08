@@ -11,11 +11,22 @@
 // "ABBA" -> 2 # 'A' and 'B' each occur twice
 
 const duplicateCount = (text) => {
-    let characterArray = text.toLowerCase().split('');
+    let characters = text.toLowerCase()
 
-    let sum = 0;
+    let otherSum = 0;
 
+    for (let i = 0; i < characters.length; i++){
+        let sum = 0;
 
+        for (let j = 0; j < characters.length; j++){
+            (characters[i] === characters[j]) ? sum++ : sum += 0;
+        }
+
+        (sum > 0) ? otherSum++ : otherSum += 0;
+    }
+    return otherSum;
 }
 
 //come back to this
+
+//some progress done some weeks after but to no avail unfortunately
