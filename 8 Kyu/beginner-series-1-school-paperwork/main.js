@@ -9,4 +9,8 @@
 
 // solving format is strange... never mind
 
+//turns out I had the wrong setting turned on LMAO.. so this was solved on June 17 2022
+
+const paperwork = (n, m) => ((n > 0) && (m > 0)) ? n * m : 0;
+
 
